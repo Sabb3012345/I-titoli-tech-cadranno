@@ -1,0 +1,604 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.1">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="it"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="theme-color" content="#1d6b44" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="description" content="Newsletter Fideuram Intesa Sanpaolo Private Banking - I titoli tech cadranno. Analisi di mercato e strategia di investimento." /&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Fideuram — I Titoli Tech Cadranno&lt;/title&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&amp;family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet" /&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>html {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>-webkit-text-size-adjust: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>-webkit-tap-highlight-color: transparent;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>scroll-behavior: smooth;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #f0f7f3;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Inter', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #1a1a1a;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>-webkit-font-smoothing: antialiased;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>-moz-osx-font-smoothing: grayscale;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow-x: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.8;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ── LAYOUT “SITO” ── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.page {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>min-height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 28px 16px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 980px;<span class="Apple-converted-space">              </span>/* più “sito”, non 680 */</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #fff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 18px 70px rgba(0,0,0,0.08);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Touch */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>a, button, .action-btn, .btn-cta {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>-webkit-tap-highlight-color: rgba(46, 139, 87, 0.2);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>touch-action: manipulation;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>img {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: auto;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>user-select: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ── HEADER ── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.header {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 18px 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-bottom: 1px solid #d4e8dc;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Logo responsive, mai overflow */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.header-logo {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 520px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: auto;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>object-fit: contain;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.header a { display:inline-block; line-height:0; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ── HERO FOTO ── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-photo {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 460px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-photo img {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>object-fit: cover;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>object-position: top center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ── HERO FULL ── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-photo-full {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #000;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-photo-full img { width: 100%; height: auto; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-photo-full + .hero-photo-full { margin-top: 56px; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ── BENVENUTI ── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.welcome-section {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 52px 40px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-bottom: 1px solid #e8f4ef;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.welcome-section h2 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Cormorant Garamond', serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 44px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 400;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #1d6b44;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: 0.4px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.25;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.welcome-divider {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 60px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #b8d5c5;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ── TITOLO PRINCIPALE ── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.section-title-main {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #1d6b44;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 64px 40px 52px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.section-title-main .kicker {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: 3px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #a8d4b8;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.section-title-main h1 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Bebas Neue', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 92px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 400;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 0.96;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.section-title-main h1 em { font-style: italic; color: #c8e6d4; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ── HOOK ── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.section-hook {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #f5fbf7;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 56px 40px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-bottom: 1px solid #d4e8dc;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.section-hook .kicker {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: 3px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #2e8b57;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.section-hook h2 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Cormorant Garamond', serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 48px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #133d28;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.15;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.section-hook p {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.8;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #2c2c2c;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 860px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ── SEZIONE MALININ “SOFT” ── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.section-unified {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-bottom: 1px solid #d4e8dc;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.section-unified::before{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>content:"";</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position:absolute;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>inset:-50px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3vUebubmG7-NRjnUsg4_n76fn1ewlmqfPBiyXpulzDFaIRNFD") center 18% / cover no-repeat;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>opacity: 0.12;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>filter: blur(7px) saturate(0.9) contrast(1.05);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transform: scale(1.06);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>pointer-events:none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>z-index:0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.section-unified::after{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>content:"";</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position:absolute;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>inset:0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.65), rgba(255,255,255,0.92) 55%, rgba(255,255,255,1) 78%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>pointer-events:none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>z-index:0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.unified-content {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>z-index: 1;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 56px 40px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.unified-content p {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.85;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #2c2c2c;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 860px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.unified-content .highlight {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #1d6b44;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ── LEZIONE ── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.section-lesson {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 56px 40px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-bottom: 1px solid #d4e8dc;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.section-lesson .kicker {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: 3px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #2e8b57;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.section-lesson h2 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Cormorant Garamond', serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 48px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #133d28;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.15;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.section-lesson p {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.85;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #2c2c2c;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 860px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ── QUOTE ── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.final-quote {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #fefdfb;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 72px 40px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.final-quote::before {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>content: '„';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>top: 6px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>left: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transform: translateX(-50%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Playfair Display', serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 180px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: rgba(29, 107, 68, 0.04);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>pointer-events: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.final-quote blockquote {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Playfair Display', serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 34px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-style: italic;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #1a4731;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.5;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 860px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto 18px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 500;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>z-index: 1;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: -0.2px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.final-quote cite {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Playfair Display', serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #2e8b57;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-style: normal;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: 0.3px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ── CTA ── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.section-cta {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #1d6b44;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 72px 40px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.section-cta h2 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Cormorant Garamond', serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.15;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.section-cta p {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #c8e6d4;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.75;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 760px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto 28px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn-cta {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: inline-flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 2px solid #c8e6d4;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Inter', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 13px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: 2.5px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 16px 46px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>min-height: 50px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn-cta:hover {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #1d6b44;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transform: translateY(-1px);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ── FOOTER ── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.footer {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #0f3d22;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 40px 28px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.footer-name {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Cormorant Garamond', serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #c8e6d4;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 6px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.footer-role {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #7ab394;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: 1px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.footer-actions {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-wrap: wrap;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.action-btn {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 46px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 46px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(46, 139, 87, 0.15);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid rgba(46, 139, 87, 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: inline-flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #7ab394;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease, color 0.25s ease;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>min-width: 46px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>min-height: 46px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.action-btn:hover {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #2e8b57;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-color: #2e8b57;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transform: translateY(-1px);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.action-btn svg { width: 20px; height: 20px; pointer-events: none; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.footer-divider {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 44px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 1px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #2e8b57;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 18px auto;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.footer-disclaimer {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #4a7a5c;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.7;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 860px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ── Fade In ── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.fade-in {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>opacity: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transform: translateY(18px);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: opacity 0.7s ease, transform 0.7s ease;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>will-change: opacity, transform;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.fade-in.visible {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>opacity: 1;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transform: translateY(0);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ── Responsive ── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media (max-width: 600px) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.page { padding: 14px 10px; }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.container { border-radius: 12px; }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.header { padding: 14px 14px; }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.header-logo { max-width: min(78vw, 320px); }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>.hero-photo { height: 320px; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>.welcome-section,</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.section-title-main,</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.section-hook,</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.unified-content,</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.section-lesson,</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.final-quote,</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.section-cta { padding: 42px 18px; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>.welcome-section h2 { font-size: 32px; }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.section-title-main h1 { font-size: 64px; }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.section-hook h2, .section-lesson h2 { font-size: 40px; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>.section-hook p, .unified-content p, .section-lesson p { font-size: 18px; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>.final-quote blockquote { font-size: 28px; }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.section-cta h2 { font-size: 36px; }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.btn-cta { width: 100%; max-width: 360px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;main class="page"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- HEADER --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;header class="header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="https://www.sanpaoloinvest.it/" target="_blank" rel="noopener" aria-label="Apri il sito Sanpaolo Invest"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;img src="https://www.genspark.ai/api/files/s/pr8QEajp" alt="Fideuram Intesa Sanpaolo Private Banking" class="header-logo" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- HERO --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;section class="hero-photo"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;img loading="lazy" src="https://www.genspark.ai/api/files/s/i8ctR7Lr" alt="Katia Mastrapasqua e Antonio Ungaro - Private Bankers"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- BENVENUTO --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;section class="welcome-section fade-in"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Benvenuti nel nostro ufficio online&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="welcome-divider"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- TITOLO --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;section class="section-title-main fade-in"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="kicker"&gt;Analisi di mercato · Febbraio 2026&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;I titoli tech&lt;br&gt;&lt;em&gt;cadranno.&lt;/em&gt;&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- HOOK --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;section class="section-hook fade-in"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="kicker"&gt;La domanda giusta&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Leggendo il titolo hai provato spavento?&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;È normale. Ma la paura non deve guidare le decisioni di investimento.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- MALININ SOFT --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;section class="section-unified fade-in"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="unified-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Ilia Malinin era il numero 1 mondiale. 14 vittorie consecutive, 2 anni senza perdere. Poi due cadute alle Olimpiadi: ottavo posto.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="highlight"&gt;&lt;strong&gt;Cosa ci insegna questo?&lt;/strong&gt; Anche i campioni cadono. La disciplina fa la differenza.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- IMMAGINI --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;section class="hero-photo-full fade-in"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;img loading="lazy" src="https://www.genspark.ai/api/files/s/ww2Lm2vk" alt="Standard &amp; Poor's 500 - Rendimenti 1925-2025"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;section class="hero-photo-full fade-in"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;img loading="lazy" src="https://www.genspark.ai/api/files/s/GmjZCAY6" alt="Nel lungo periodo non è il mercato che tradisce l'investitore, è l'investitore che tradisce il proprio piano"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- LEZIONE --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;section class="section-lesson fade-in"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="kicker"&gt;La lezione finale&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Chi ha un piano vince.&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;I campioni si rialzano dopo ogni caduta. Chi resta fedele al proprio piano raccoglie i frutti della pazienza.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- QUOTE --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;section class="final-quote fade-in"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;blockquote&gt;«Il principale problema dell'investitore è il suo peggior nemico che probabilmente è se stesso.»&lt;/blockquote&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;cite&gt;Benjamin Graham&lt;/cite&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- CTA --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;section class="section-cta fade-in"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Il tuo patrimonio&lt;br&gt;è protetto?&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Pianificare, diversificare, restare disciplinati anche quando i mercati scendono: è esattamente il lavoro che facciamo ogni giorno per te.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="tel:+393388190334" class="btn-cta"&gt;Parliamo del tuo futuro&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- FOOTER --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;footer class="footer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="footer-name"&gt;Dott.ssa Katia Mastrapasqua · Dott. Antonio Ungaro&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="footer-role"&gt;Private Bankers&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="footer-actions"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a href="tel:+393388190334" class="action-btn" title="Chiama" aria-label="Telefono"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"&gt;&lt;/path&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/a&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a href="mailto:ungaro.consulenza@gmail.com" class="action-btn" title="Email" aria-label="Email"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"&gt;&lt;/path&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;polyline points="22,6 12,13 2,6"&gt;&lt;/polyline&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/a&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a href="https://alfabeto.fideuram.it/alfabeto-vetrina/webapp/vetrinapb-v1/web/antonioungaro" target="_blank" rel="noopener" class="action-btn" title="Sito web" aria-label="Sito web"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"&gt;&lt;/path&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"&gt;&lt;/path&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/a&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a href="https://www.facebook.com/antonioungaroconsulenza" target="_blank" rel="noopener" class="action-btn" title="Facebook" aria-label="Facebook"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;svg viewBox="0 0 24 24" fill="currentColor"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/a&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a href="https://it.linkedin.com/in/ungaro-mastrapasqua-private-banking" target="_blank" rel="noopener" class="action-btn" title="LinkedIn" aria-label="LinkedIn"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;svg viewBox="0 0 24 24" fill="currentColor"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/a&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a href="https://www.instagram.com/noncirestacheinvestire/" target="_blank" rel="noopener" class="action-btn" title="Instagram" aria-label="Instagram"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;svg viewBox="0 0 24 24" fill="currentColor"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="footer-divider"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="footer-disclaimer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>Messaggio pubblicitario con finalità promozionale. Prima dell'adesione leggere il prospetto, disponibile presso gli uffici dei Private Banker e sul sito www.sanpaoloinvest.it</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/main&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Fade-in animation on scroll</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const observer = new IntersectionObserver((entries) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>entries.forEach(entry =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (entry.isIntersecting) entry.target.classList.add('visible');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}, { threshold: 0.12 });</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.querySelectorAll('.fade-in').forEach(el =&gt; observer.observe(el));</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
