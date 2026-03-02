@@ -1,263 +1,307 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#1d6b44">
-<meta name="description" content="Analisi di mercato Fideuram Intesa Sanpaolo Private Banking. I titoli tech cadranno.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1d6b44" />
+  <meta name="description" content="Analisi di mercato Fideuram Intesa Sanpaolo Private Banking. I titoli tech cadranno." />
+  <title>Fideuram — I titoli tech cadranno</title>
 
-<title>Fideuram — I titoli tech cadranno</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{
+      background:#f0f7f3;
+      font-family:'Inter',sans-serif;
+      color:#1a1a1a;
+      line-height:1.8;
+      overflow-x:hidden;
+    }
+    img{max-width:100%;height:auto;display:block}
 
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{
-  background:#f0f7f3;
-  font-family:'Inter',sans-serif;
-  color:#1a1a1a;
-  line-height:1.8;
-}
+    /* LAYOUT */
+    .page{padding:28px 16px}
+    .container{
+      max-width:980px;
+      margin:0 auto;
+      background:#fff;
+      border-radius:14px;
+      overflow:hidden;
+      box-shadow:0 18px 70px rgba(0,0,0,.08);
+    }
 
-/* LAYOUT */
-.page{padding:28px 16px}
-.container{
-  max-width:980px;
-  margin:0 auto;
-  background:#fff;
-  border-radius:14px;
-  overflow:hidden;
-  box-shadow:0 18px 70px rgba(0,0,0,.08)
-}
+    /* HEADER */
+    .header{
+      padding:18px 24px;
+      border-bottom:1px solid #d4e8dc;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:#fff;
+    }
+    .header a{display:inline-block;line-height:0}
+    .header-logo{max-width:520px;width:100%;height:auto;object-fit:contain}
 
-/* HEADER */
-.header{
-  padding:18px 24px;
-  border-bottom:1px solid #d4e8dc;
-  display:flex;
-  justify-content:center;
-}
-.header-logo{
-  max-width:520px;
-  width:100%;
-  height:auto;
-}
+    /* HERO */
+    .hero-photo{height:460px;overflow:hidden}
+    .hero-photo img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      object-position:top center;
+    }
 
-/* HERO */
-.hero-photo{
-  height:460px;
-  overflow:hidden;
-}
-.hero-photo img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  object-position:top center;
-}
+    /* SEZIONI */
+    .section{padding:56px 40px;border-bottom:1px solid #d4e8dc}
+    .section.center{text-align:center}
+    .kicker{
+      font-size:12px;
+      letter-spacing:3px;
+      text-transform:uppercase;
+      color:#2e8b57;
+      margin-bottom:18px;
+      font-weight:600;
+    }
+    h1{
+      font-family:'Bebas Neue',sans-serif;
+      font-size:92px;
+      letter-spacing:2px;
+      color:#fff;
+      line-height:0.96;
+      margin:0;
+    }
+    h2{
+      font-family:'Cormorant Garamond',serif;
+      font-size:48px;
+      color:#133d28;
+      margin-bottom:18px;
+      line-height:1.15;
+    }
+    p{font-size:20px;max-width:860px;color:#2c2c2c}
+    p + p{margin-top:14px}
 
-/* SEZIONI */
-.section{padding:56px 40px;border-bottom:1px solid #d4e8dc}
-.section.center{text-align:center}
-.kicker{
-  font-size:12px;
-  letter-spacing:3px;
-  text-transform:uppercase;
-  color:#2e8b57;
-  margin-bottom:18px;
-  font-weight:600;
-}
-h1{
-  font-family:'Bebas Neue',sans-serif;
-  font-size:92px;
-  letter-spacing:2px;
-  color:#fff;
-}
-h2{
-  font-family:'Cormorant Garamond',serif;
-  font-size:48px;
-  color:#133d28;
-  margin-bottom:18px;
-}
-p{font-size:20px;max-width:860px}
+    /* TITLE */
+    .section-title{background:#1d6b44;text-align:center;color:#fff}
+    .section-title em{color:#c8e6d4;font-style:italic}
 
-/* TITLE */
-.section-title{
-  background:#1d6b44;
-  text-align:center;
-  color:#fff;
-}
-.section-title em{color:#c8e6d4}
+    /* MALININ SECTION (soft bg) */
+    .section-malinini{
+      position:relative;
+      overflow:hidden;
+      background:#fff;
+    }
+    .section-malinini::before{
+      content:"";
+      position:absolute;
+      inset:-50px;
+      background:url("https://img.ilgcdn.com/sites/default/files/styles/xl/public/foto/2026/02/14/1771064848-azxbdtbzel-x7xk16eso-lapresse.jpg?_=1771064848&format=webp") center 20% / cover no-repeat;
+      opacity:.12;
+      filter:blur(7px) saturate(.9) contrast(1.05);
+      transform:scale(1.06);
+      pointer-events:none;
+      z-index:0;
+    }
+    .section-malinini::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:radial-gradient(circle at 30% 20%,rgba(255,255,255,.60),rgba(255,255,255,.92) 55%,rgba(255,255,255,1) 78%);
+      pointer-events:none;
+      z-index:0;
+    }
+    .section-malinini > *{position:relative;z-index:1}
 
-/* MALININ BACKGROUND */
-.section-malinini{
-  position:relative;
-  overflow:hidden;
-}
-.section-malinini::before{
-  content:"";
-  position:absolute;
-  inset:-50px;
-  background:url("https://img.ilgcdn.com/sites/default/files/styles/xl/public/foto/2026/02/14/1771064848-azxbdtbzel-x7xk16eso-lapresse.jpg?_=1771064848&format=webp") center 20% / cover no-repeat;
-  opacity:.12;
-  filter:blur(7px);
-  z-index:0;
-}
-.section-malinini::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:radial-gradient(circle at 30% 20%,rgba(255,255,255,.6),#fff 70%);
-  z-index:0;
-}
-.section-malinini>*{position:relative;z-index:1}
+    /* ✅ MALININ CARD (foto visibile e stabile) */
+    .malinin-card{
+      margin-top:26px;
+      display:grid;
+      grid-template-columns:200px 1fr;
+      gap:18px;
+      align-items:center;
+      background:rgba(255,255,255,.8);
+      border-radius:14px;
+      padding:14px;
+      border:1px solid rgba(29,107,68,.15);
+      box-shadow:0 10px 30px rgba(0,0,0,.06);
+      backdrop-filter: blur(6px);
+    }
+    .malinin-imgwrap{
+      border-radius:12px;
+      overflow:hidden;
+      aspect-ratio: 4 / 5;
+      background:#eef6f1;
+      border:1px solid rgba(0,0,0,.06);
+    }
+    .malinin-imgwrap img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      object-position:center;
+      display:block;
+    }
+    .malinin-meta{display:flex;flex-direction:column;gap:10px}
+    .malinin-tag{
+      font-size:12px;
+      letter-spacing:1.5px;
+      text-transform:uppercase;
+      color:#1d6b44;
+      font-weight:600;
+      width:fit-content;
+      padding:6px 10px;
+      border-radius:999px;
+      background:rgba(29,107,68,.08);
+      border:1px solid rgba(29,107,68,.14);
+    }
+    .malinin-note{font-size:14px;line-height:1.55;color:#2c2c2c;opacity:.9}
 
-/* MALININ CARD */
-.malinin-card{
-  margin-top:26px;
-  display:grid;
-  grid-template-columns:200px 1fr;
-  gap:18px;
-  background:rgba(255,255,255,.8);
-  border-radius:14px;
-  padding:14px;
-  border:1px solid rgba(29,107,68,.15);
-  box-shadow:0 10px 30px rgba(0,0,0,.06)
-}
-.malinin-card img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  border-radius:12px;
-}
-.malinin-meta{
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-}
-.malinin-tag{
-  font-size:12px;
-  letter-spacing:1.5px;
-  text-transform:uppercase;
-  color:#1d6b44;
-}
-.malinin-note{font-size:14px}
+    /* CTA */
+    .cta{background:#1d6b44;color:#fff;text-align:center}
+    .cta p{color:#c8e6d4;max-width:760px;margin:0 auto}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      margin-top:24px;
+      padding:16px 46px;
+      border:2px solid #c8e6d4;
+      color:#fff;
+      text-decoration:none;
+      letter-spacing:2.5px;
+      text-transform:uppercase;
+      border-radius:8px;
+      transition:transform .25s ease, background .25s ease, color .25s ease;
+      min-height:50px;
+    }
+    .btn:hover{background:#fff;color:#1d6b44;transform:translateY(-1px)}
 
-/* CTA */
-.cta{
-  background:#1d6b44;
-  color:#fff;
-  text-align:center;
-}
-.cta p{color:#c8e6d4}
-.btn{
-  display:inline-block;
-  margin-top:24px;
-  padding:16px 46px;
-  border:2px solid #c8e6d4;
-  color:#fff;
-  text-decoration:none;
-  letter-spacing:2.5px;
-  text-transform:uppercase;
-  border-radius:8px;
-}
-.btn:hover{background:#fff;color:#1d6b44}
+    /* FOOTER */
+    .footer{
+      background:#0f3d22;
+      color:#c8e6d4;
+      padding:40px 28px;
+      text-align:center;
+      font-size:14px;
+      line-height:1.6;
+    }
 
-/* FOOTER */
-.footer{
-  background:#0f3d22;
-  color:#c8e6d4;
-  padding:40px 28px;
-  text-align:center;
-  font-size:14px;
-}
+    /* ANIMAZIONI */
+    .fade-in{
+      opacity:0;
+      transform:translateY(20px);
+      transition:opacity .7s ease, transform .7s ease;
+      will-change:opacity, transform;
+    }
+    .fade-in.visible{opacity:1;transform:none}
 
-/* ANIMAZIONI */
-.fade-in{opacity:0;transform:translateY(20px);transition:.7s}
-.fade-in.visible{opacity:1;transform:none}
-
-/* MOBILE */
-@media(max-width:600px){
-  h1{font-size:64px}
-  h2{font-size:40px}
-  p{font-size:18px}
-  .section{padding:42px 18px}
-  .hero-photo{height:320px}
-  .malinin-card{grid-template-columns:1fr}
-}
-</style>
+    /* MOBILE */
+    @media(max-width:600px){
+      .page{padding:14px 10px}
+      .section{padding:42px 18px}
+      .hero-photo{height:320px}
+      .header{padding:14px 14px}
+      .header-logo{max-width:min(78vw,320px)}
+      h1{font-size:64px}
+      h2{font-size:40px}
+      p{font-size:18px}
+      .malinin-card{grid-template-columns:1fr}
+      .malinin-imgwrap{aspect-ratio:16/10}
+      .malinin-note{font-size:15px}
+      .btn{width:100%;max-width:360px}
+    }
+  </style>
 </head>
 
 <body>
-<main class="page">
-<div class="container">
+  <main class="page">
+    <div class="container">
 
-<header class="header">
-  <a href="https://www.sanpaoloinvest.it/" target="_blank">
-    <img src="https://www.genspark.ai/api/files/s/pr8QEajp" alt="Fideuram Intesa Sanpaolo Private Banking" class="header-logo">
-  </a>
-</header>
+      <!-- HEADER -->
+      <header class="header">
+        <a href="https://www.sanpaoloinvest.it/" target="_blank" rel="noopener" aria-label="Apri il sito Sanpaolo Invest">
+          <img src="https://www.genspark.ai/api/files/s/pr8QEajp" alt="Fideuram Intesa Sanpaolo Private Banking" class="header-logo" />
+        </a>
+      </header>
 
-<section class="hero-photo">
-  <img src="https://www.genspark.ai/api/files/s/i8ctR7Lr" alt="Private Bankers">
-</section>
+      <!-- HERO -->
+      <section class="hero-photo">
+        <img loading="lazy" src="https://www.genspark.ai/api/files/s/i8ctR7Lr" alt="Katia Mastrapasqua e Antonio Ungaro - Private Bankers" />
+      </section>
 
-<section class="section center fade-in">
-  <h2>Benvenuti nel nostro ufficio online</h2>
-</section>
+      <!-- BENVENUTO -->
+      <section class="section center fade-in">
+        <h2>Benvenuti nel nostro ufficio online</h2>
+      </section>
 
-<section class="section section-title fade-in">
-  <div class="kicker">Analisi di mercato · Febbraio 2026</div>
-  <h1>I titoli tech<br><em>cadranno.</em></h1>
-</section>
+      <!-- TITOLO -->
+      <section class="section section-title fade-in">
+        <div class="kicker">Analisi di mercato · Febbraio 2026</div>
+        <h1>I titoli tech<br><em>cadranno.</em></h1>
+      </section>
 
-<section class="section fade-in">
-  <div class="kicker">La domanda giusta</div>
-  <h2>Leggendo il titolo hai provato spavento?</h2>
-  <p>È normale. Ma la paura non deve guidare le decisioni di investimento.</p>
-</section>
+      <!-- HOOK -->
+      <section class="section fade-in">
+        <div class="kicker">La domanda giusta</div>
+        <h2>Leggendo il titolo hai provato spavento?</h2>
+        <p>È normale. Ma la paura non deve guidare le decisioni di investimento.</p>
+      </section>
 
-<section class="section section-malinini fade-in">
-  <p>Ilia Malinin era il numero uno mondiale. 14 vittorie consecutive, due anni senza perdere. Poi due cadute alle Olimpiadi: ottavo posto.</p>
+      <!-- MALININ (soft bg + card foto) -->
+      <section class="section section-malinini fade-in">
+        <p>Ilia Malinin era il numero uno mondiale. 14 vittorie consecutive, due anni senza perdere. Poi due cadute alle Olimpiadi: ottavo posto.</p>
+        <p><strong>Cosa ci insegna questo?</strong> Anche i campioni cadono. La disciplina fa la differenza.</p>
 
-  <p><strong>Cosa ci insegna questo?</strong> Anche i campioni cadono. La disciplina fa la differenza.</p>
+        <div class="malinin-card">
+          <div class="malinin-imgwrap">
+            <img
+              loading="lazy"
+              referrerpolicy="no-referrer"
+              src="https://img.ilgcdn.com/sites/default/files/styles/xl/public/foto/2026/02/14/1771064848-azxbdtbzel-x7xk16eso-lapresse.jpg?_=1771064848&format=webp"
+              alt="Ilia Malinin - Atleta"
+            />
+          </div>
+          <div class="malinin-meta">
+            <div class="malinin-tag">Esempio reale</div>
+            <div class="malinin-note">
+              Anche le carriere più brillanti attraversano momenti critici. La differenza, nel lungo periodo, è restare fedeli al metodo.
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <div class="malinin-card">
-    <img src="https://img.ilgcdn.com/sites/default/files/styles/xl/public/foto/2026/02/14/1771064848-azxbdtbzel-x7xk16eso-lapresse.jpg?_=1771064848&format=webp" alt="Ilia Malinin">
-    <div class="malinin-meta">
-      <div class="malinin-tag">Esempio reale</div>
-      <div class="malinin-note">
-        Anche le carriere più brillanti attraversano momenti critici. La differenza, nel lungo periodo, è restare fedeli al metodo.
-      </div>
+      <!-- LEZIONE -->
+      <section class="section fade-in">
+        <div class="kicker">La lezione finale</div>
+        <h2>Chi ha un piano vince.</h2>
+        <p>I campioni si rialzano dopo ogni caduta. Chi resta disciplinato raccoglie i frutti della pazienza.</p>
+      </section>
+
+      <!-- CTA -->
+      <section class="section cta fade-in">
+        <h2>Il tuo patrimonio è protetto?</h2>
+        <p>Pianificare, diversificare, restare disciplinati anche quando i mercati scendono: è esattamente il lavoro che facciamo ogni giorno.</p>
+        <a href="tel:+393388190334" class="btn">Parliamo del tuo futuro</a>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        Messaggio pubblicitario con finalità promozionale. Prima dell’adesione leggere il prospetto informativo.
+      </footer>
+
     </div>
-  </div>
-</section>
+  </main>
 
-<section class="section fade-in">
-  <div class="kicker">La lezione finale</div>
-  <h2>Chi ha un piano vince.</h2>
-  <p>I campioni si rialzano dopo ogni caduta. Chi resta disciplinato raccoglie i frutti della pazienza.</p>
-</section>
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.15 });
 
-<section class="section cta fade-in">
-  <h2>Il tuo patrimonio è protetto?</h2>
-  <p>Pianificare, diversificare, restare disciplinati anche quando i mercati scendono.</p>
-  <a href="tel:+393388190334" class="btn">Parliamo del tuo futuro</a>
-</section>
-
-<footer class="footer">
-  Messaggio pubblicitario con finalità promozionale. Prima dell’adesione leggere il prospetto informativo.
-</footer>
-
-</div>
-</main>
-
-<script>
-const observer=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add("visible")),{threshold:.15});
-document.querySelectorAll(".fade-in").forEach(el=>observer.observe(el));
-</script>
-
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
